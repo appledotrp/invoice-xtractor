@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+    <style>
+      /* Add your custom CSS styles here */
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+      }
+      .modal {
+        width: auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px #0072c6;
+        /* Adjust the height to auto and remove overflow */
+        height: auto;
+        overflow: auto;
+        position: relative; /* Add this line to position the image */
+      }
+      .header-img {
+        position: absolute;
+        top: 20px; /* Adjust the top value to position the image vertically */
+        right: 20px; /* Adjust the right value to position the image horizontally */
+        width: 70px; /* Adjust the width of the image as needed */
+      }
+      .header-img-left {
+        position: absolute;
+        top: 15px; /* Adjust the top value to position the image vertically */
+        left: 20px; /* Adjust the left value to position the image horizontally */
+        width: 75px; /* Adjust the width of the image as needed */
+      }
+      h1 {
+        color: #800060; /* Change the header color to magenta */
+        text-align: center; /* Center the header text horizontally */
+      }
+      p {
+        color: #333;
+      }
+      .button-container {
+        text-align: center;
+      }
+      .button {
+        background-color: #800060; /* Set the button background color to magenta */
+        color: white; /* Set the button text color to white */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .bottom-message {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .bottom-message a {
+        color: #0072c6;
+        text-decoration: none;
+      }
+      /* Add the footer styles */
+      footer {
+        text-align: right;
+        margin-top: 50px;
+        color: #808080;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal">
+      <img class="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQHUEXvmQvHgJWxvNqfjZ7wzWai3c4U3BeJQ&usqp=CAU" alt="Header Image">
+      <img class="header-img-left" src="data:image/png;base64,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" alt="Header Image">
+      <h1>InvoiceXtractor</h1>
+      <p>It is a powerful tool designed to extract essential information on Invoices. It can extract key details from invoices, including the Invoice Number, Invoice Date, Purchase Order, Total Dues, and Payment Terms.</p>
+      <strong>How to Execute:</strong>
+      <ol>
+        <li>Select a brand from the drop-down list</li>
+        <li>Select a date</li>
+        <li>Click “Download” Attachment under the Invoice Parser Tool</li>
+        <li>Click "Parser Now" under the Invoice Parser Tool</li>
+        <li>Wait until the ‘success GIF appears’, and then click "Close"</li>
+      </ol>
+      <strong>NOTE:</strong>
+      <ul>
+        Ensure that you copy the data to your Excel file in the desired location before clicking "Clear" to empty the columns. Otherwise, if you re-execute the process, the data will be overwritten.
+      </ul>
+      <div class="button-container">
+        <button class="button" onclick="google.script.host.close()">OK</button>
+      </div>
+      <div class="bottom-message">
+        Please check this Guide <a href="https://docs.google.com/document/d/115t9KrrORMLugpCV8e6MT1kpUnWPM5f0eme1eUDI43c/edit" target="_blank">here</a> to view more details.
+      </div>      
+    </div>
+  </body>
+</html>

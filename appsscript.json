@@ -1,0 +1,23 @@
+{
+  "timeZone": "Asia/Shanghai",
+  "dependencies": {
+    "enabledAdvancedServices": [{
+      "userSymbol": "Gmail",
+      "serviceId": "gmail",
+      "version": "v1"
+    }, {
+      "userSymbol": "Drive",
+      "serviceId": "drive",
+      "version": "v2"
+    }]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "sheets": {
+    "macros": [{
+      "menuName": "Testing",
+      "functionName": "Testing",
+      "defaultShortcut": "Ctrl+Alt+Shift+1"
+    }]
+  }
+}
